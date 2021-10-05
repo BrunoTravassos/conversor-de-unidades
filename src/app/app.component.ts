@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'conversor-de-unidades';
+  title = 'Conversor de Unidades';
 }
