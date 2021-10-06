@@ -14,9 +14,9 @@ export class TemperaturaService {
     { "sigla": "°F", "descricao": "Fahrenheit" }
   ]; */
   private temperaturaObj = [
-    { "sigla": "c", "descricao": "Graus Celcius" },
-    { "sigla": "k", "descricao": "Kelvin" },
-    { "sigla": "f", "descricao": "Graus Fahrenheit" }
+    { "sigla": "°C", "descricao": "Graus Celcius" },
+    { "sigla": "°K", "descricao": "Kelvin" },
+    { "sigla": "°F", "descricao": "Graus Fahrenheit" }
   ];
 
   listarTodas(): Temperatura[] {
