@@ -20,7 +20,7 @@ export class ConversorService {
     const to = conversao.temperaturaPara;
     let convertedValue;
 
-    if (from === to) { ({ alert: 'As unidades de origem e destino não podem ser iguais!' }); }
+    if (from === to) {  alert: 'As unidades de origem e destino não podem ser iguais!' ; }
 
 
     if (from === '°C' && to === '°F') { convertedValue = ((conversao.valor) * 9 / 5) + 32; }

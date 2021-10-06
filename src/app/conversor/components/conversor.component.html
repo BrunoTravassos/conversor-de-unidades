@@ -12,7 +12,7 @@
     <!-- <form class="form-inline "> -->
       <input type="text" name="valor" class="form-control text-right" placeholder="0" [(ngModel)]="conversao.valor" required>
       <!-- <input type="text" name="valor" class="form-control text-right" placeholder="0" numero required> -->
-      <select name="moedaDe" [(ngModel)]="conversao.temperaturaDe" class="form-control ml-3" required>
+      <select name="temperaturaDe" [(ngModel)]="conversao.temperaturaDe" class="form-control ml-3" required>
       <!-- <select name="temperaturaDe" class="form-control ml-3" required> -->
         <option *ngFor="let temperatura of temperaturas" [value]="temperatura.sigla">
           {{temperatura.sigla}} - {{temperatura.descricao}}

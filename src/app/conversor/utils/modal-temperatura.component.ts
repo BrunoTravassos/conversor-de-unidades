@@ -29,13 +29,8 @@ export class ModalTemperaturaComponent implements OnInit {
   }
 
   get valorConvertido(): string {
-   /*  console.log(this.conversaoResponse)
-    console.log(this.conversorService.converter(this.conversao)) */
-    /* if (this.conversaoResponse === undefined) {
-      return '0'
-    } else */ {
+   {
       let x:any = this.conversorService.converter(this.conversao)
-      // return (this.conversao.valor * this.conversaoResponse.rates[this.conversao.moedaPara]).toFixed(2);
       console.log(this.conversorService.converter)
       return x
     }
