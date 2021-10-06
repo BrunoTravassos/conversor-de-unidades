@@ -14,14 +14,7 @@ export class ConversorService {
   // constructor(private http: HttpClient) { }
   constructor() { }
 
-  /* converter(conversao: Conversao): Observable<any> {
-    // let params = `&from=${conversao.temperaturaDe}&to=${conversao.temperaturaPara}&${conversao.valor}`;
-    let params = `&from=${conversao.temperaturaDe}&to=${conversao.temperaturaPara}&value=${conversao.valor}`;
-    // console.log(this.http.get(this.BASE_URL + params))
-    console.log(conversao)
-    // return this.http.get(this.BASE_URL + params);
-    return conversao;
-  } */
+
   converter(conversao: Conversao): Observable<any> {
     const from = conversao.temperaturaDe;
     const to = conversao.temperaturaPara;
@@ -40,7 +33,7 @@ export class ConversorService {
     if (from === '°K' && to === '°F') {
       convertedValue = ((((conversao.valor ) - 273.15) * 9) / 5) + 32;
     }
-    console.log(convertedValue)
+    // console.log(convertedValue)
     return convertedValue
   }
 

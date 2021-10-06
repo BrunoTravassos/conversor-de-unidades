@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ConversorComponent } from './components';
 import { ConversorService, TemperaturaService } from './services';
 import { FormsModule } from '@angular/forms';
-import { ModalTemperaturaComponent } from './modal-temperatura/modal-temperatura.component';
+import { ModalTemperaturaComponent } from './utils';
 
 
 
@@ -15,7 +15,7 @@ import { ModalTemperaturaComponent } from './modal-temperatura/modal-temperatura
   imports: [
     CommonModule,
     FormsModule
-  ],
+    ],
   exports: [
     ConversorComponent
   ],
